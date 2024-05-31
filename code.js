@@ -1,22 +1,14 @@
-function calculateTotal() {
-  var femalePrice = 150.95;
-  var femaleQuantity = parseInt(
-    document.forms["orders"]["femaleQuantity"].value
-  );
-  var femaleTotal = femalePrice * femaleQuantity;
+let totalBtn = document.querySelector('#total-btn')
 
-  var malePrice = 180.95;
-  var maleQuantity = parseInt(document.forms["orders"]["maleQuantity"].value);
-  var maleTotal = malePrice * maleQuantity;
+let femaleTotal = document.querySelector('#f-total')
+let maleTotal = document.querySelector('#m-total')
 
-  alert(
-    "Total price for Female Jackets: " +
-      femaleTotal.toFixed(2) +
-      " Rand\nTotal price for Male Jackets: " +
-      maleTotal.toFixed(2) +
-      " Rand"
-  );
+let femaleQty = parseFloat(document.querySelector('#f-qty').value)
+let maleQty = parseFloat(document.querySelector('#m-qty').value)
 
-  var totalPrice = femaleTotal + maleTotal;
-  alert("Total price for the order: " + totalPrice.toFixed(2) + " Rand");
-}
+const femalePrice = 150.95
+const malePrice = 180.95
+
+totalBtn.addEventListener('click', () => {
+    if()
+})
